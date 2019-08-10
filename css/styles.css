@@ -1,5 +1,8 @@
 body {
-  height: 1200px; }
+  height: 1200px;
+  background-color: red;
+  font-size: 200px;
+}
 
 .head {
   height: 400px;
