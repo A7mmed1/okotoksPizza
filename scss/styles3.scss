@@ -1,0 +1,112 @@
+
+
+ body {
+     background-image: url('/images/23.jpg');
+     color: white;
+     font-weight: bold;
+ }
+
+.body-overlay {
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   background-image: url("/images/23.jpg");
+   opacity: 0.5;
+   z-index: -1;
+ }
+ .mobile{
+     color: white;
+     margin-right: 100%;
+ }
+ .the{
+     display: none;
+ }
+ @media (max-width:991px){
+     .mobile{
+         display: none;
+     }
+     .the {
+         display: inline;
+     }
+ }
+
+.menu {
+    h2 {
+        padding: 0 auto;
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        text-shadow: 8px 8px 16px black;
+        background-color: #ec1c23;
+
+
+     }
+     p {
+         background-color: #19508c;
+         span{
+             color: #ec1c23;
+             font-size: 25px;
+         }
+     }
+    ul {
+         margin-top: 40px;
+    li {
+        color: white;
+        background-color: #19508c;
+        border: 2px solid white;
+        padding: 10px 20px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        &:hover,
+        &.active {
+                background-color: #ec1c23;
+                color: #fff;
+                border: 2px solid #ec1c23;
+             }
+         &:hover {
+                 cursor: pointer;
+             }
+         }
+     }
+ }
+.card {
+        overflow: both;
+        float: left;
+        margin-left: 20px;
+        background-color: inherit;
+        background-image: inherit;
+        flex-basis:l;
+    .card-img-top {
+            overflow: both;
+     }
+     @media(max-width: 992px){
+             .card-img-top{
+                 width: 50%;
+         }
+     }
+    .card-text{
+            background-color: #19508c;
+    }
+ }
+
+
+
+.copy-right {
+         background-color: white;
+         border-top: 1px solid black;
+         padding: 20px;
+         color: black;
+         text-shadow: 2px 2px 8px black;
+     ul {
+         li {
+             display: inline-block;
+             margin-left: 20px;
+         }
+    }
+ }

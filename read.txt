@@ -1,0 +1,8 @@
+1 problem location (google map ) was not resposive 
+i have solved that after i gave a spicifce rules to the main class which is contain the iframe which is include the linke to the google map
+2 problem : a weird gap showed up on the right side of my home page 
+i was trying to play with margin in the body and it works then i have changed some rulles in the scss and the margin disappear
+3 break points worked perfectly  
+4 scss was not work as needed 
+untill i repeat almost everything , so i have learned to do all the styles by using scss 
+i have learned to start with the layout then fill all the content for all the pages then start to give the styles as i planned earlier
