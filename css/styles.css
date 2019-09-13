@@ -1,12 +1,12 @@
 body {
   height: 1200px;
-  background-color: red;
-  
+  background-color:
+
 }
 
 .head {
   height: 400px;
-  background-image: url("/images/23.jpg");
+  background-image: url("/images/12.jpeg");
   background-size: cover;
   background-position: top;
   text-align: center;
