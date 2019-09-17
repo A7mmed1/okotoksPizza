@@ -161,8 +161,9 @@
                 <div class="container">
                     <h4> Check our store  </h4>
                  <div class="my text-center">
-                <video class="me text-center" width="640"  height="360" controls>
-                <source src="https://www.youtube.com/watch?v=Sp8Xzh9LIzk" autoplay poster="posterimage.jpg">
+                     <iframe class="me text-center" width="640" height="360" src="https://www.youtube.com/watch?v=Sp8Xzh9LIzk"> </iframe>
+
+                         
                 </div>
             </div>
         </div>
