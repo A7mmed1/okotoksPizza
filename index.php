@@ -9,7 +9,7 @@
         <link rel="icon" href="images/icon.ico" type="image/png" sizes="64x64">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="css/styles.css">
-        <title>Awesome Site</title>
+        <title>orginal website</title>
     </head>
     <body>
 <!--Start the header section -->
