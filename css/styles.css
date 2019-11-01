@@ -1,11 +1,15 @@
 body {
   height: 1200px;
+<<<<<<< HEAD
+=======
+  background-color:
+>>>>>>> 5ab677c779eeeacad26175295b252b3a5a7d6a51
 
 }
 
 .head {
   height: 400px;
-  background-image: url("/images/23.jpg");
+  background-image: url("/images/12.jpeg");
   background-size: cover;
   background-position: top;
   text-align: center;

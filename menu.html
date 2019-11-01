@@ -1,457 +1,538 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="pizza-website">
-        <meta name="keywords" content="info about the place">
-        <meta name="author" content="Ahmmed">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="images/icon.ico" type="image/png" sizes="64x64">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/styles3.css">
-        <title>menu</title>
-    </head>
-    <body>
-        <div class="body-overlay"></div>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="pizza-website">
+    <meta name="keywords" content="info about the place">
+    <meta name="author" content="Ahmmed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.ico" type="image/png" sizes="64x64">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles3.css">
+    <title>menu</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar  sticky-top navbar navbar-dark bg-dark navbar-light bg-light">
+        <div class="container">
+                    <a class="navbar-brand" href="index.html">Okotoks Pizza</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+      <section class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto ">
+                <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Promo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="location.html">Location </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                    </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://www.tripadvisor.ca/Restaurant_Review-g181799-d10621569-Reviews-Okotoks_Pizza_Pasta-Okotoks_Alberta.html">Review</a>
+                    <a class="dropdown-item" href="https://www.zomato.com/okotoks-ab/okotoks-pizza-and-pasta-okotoks">Info</a>
+        <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="https://www.google.ca/">Help?</a>
+        </div>
+                </li>
+        </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </section>
+    </div>
+</nav>
+<br>
+    <div class="body-overlay"></div>
 
 
 
-        <header class="logo">
-                <img src="images/logo.png" alt="logo">
-        </header>
-            <div>
-                <button class="the"  type="button" name="button"> <a href="tel:403555-5555"> Call now</a></button>
+    <header class="logo">
+        <img src="images/logo.png" alt="logo">
+    </header>
+    <div>
+        <button class="the"  type="button" name="button"> <a href="tel:403555-5555"> Call now</a></button>
 
-            </div>
-            <section class="mobile">
-                <span> Cell:4035555555</span>
+    </div>
+    <section class="mobile">
+        <span> Cell:4035555555</span>
 
-            </section>
-        <nav class="menu text-center">
-            <div class="container">
-                <h2>Here is our Menu</h2>
-                    <p> All recipes has the same price <span>19.99$</span> for Meduim and <span>27.99$</span> only if you add more topic or modfy a recipe the we will charge you an extra  moeny , do not be afraid not that much , you can also creat your own by CYO section</p>
-                <ul class="list-unstyled row">
-                    <li class=" active col-md">CYO</li>
-                    <li class="col-md">+Add Cheese 1.99$</li>
-                    <li class="col-md">+ Add Topic 1.99$</li>
-                    <li class="col-md"> Chosse the crust 1.99$</li>
-                    <li class="col-md">Extra Sauce 1.99$</li>
+    </section>
+    <nav class="menu text-center">
+        <div class="container">
+            <h2>Here is our Menu</h2>
+            <p> All recipes has the same price <span>19.99$</span> for Meduim and <span>27.99$</span> only if you add more topic or modfy a recipe the we will charge you an extra  moeny , do not be afraid not that much , you can also creat your own by CYO section</p>
+            <table id="postForm_promote">
+                <tr><th>Sizes</th><th></th><th>Extra's</th><th>Cost</th></tr>
+                <tr>
+                    <td>
+                        <label class="btn btn-primary" for="ad_promote_highlight" style="cursor:pointer;vertical-align:top;">
+                            <input type="checkbox" name="ad_promote" value="1" id="ad_promote_highlight">Smol
+                        </label>
+                    </td>
+                    <!-- <li class="active col-md">CYO</li> -->
+                    <td class="ad_promote_info">+Add Cheese 1.99$</td>
+                    <td><input type="number" value="1" min="1" name="ad_promote_days" class="ad_promote_days">Quantity</td>
+                    <td>$1.99</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="btn btn-primary" for="ad_promote_mediumsize" style="cursor:pointer;vertical-align:top;">
+                            <input type="checkbox" name="ad_promote" value="2" id="ad_promote_mediumsize">Medium Size
+                        </label>
+                    </td>
+                    <td class="ad_promote_info">+ Add Toping 1.99$</td>
+                    <td><input type="number" value="1" min="1" name="ad_promote_days" class="ad_promote_days">Quantity</td>
+                    <td>$1.99</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="btn btn-primary" for="ad_promote_largesize" style="cursor:pointer;vertical-align:top;">
+                            <input type="checkbox" name="ad_promote" value="3" id="ad_promote_largesize">Large Size
+                        </label>
+                    </td>
+                    <td class="ad_promote_info"> Choose the crust $1.99</td>
+                    <td><input type="number" value="1" min="1" name="ad_promote_days" class="ad_promote_days">Quantity</td>
+                    <td>$1.99</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="btn btn-primary" for="ad_promote_frontpage" style="cursor:pointer;vertical-align:top;">
+                            <input type="checkbox" name="ad_promote" value="4" id="ad_promote_frontpage">Front Page
+                        </label>
+                    </td>
+                    <td class="ad_promote_info">Extra Sauce $1.99</td>
+                    <td><input type="number" value="1" min="1" name="ad_promote_days" class="ad_promote_days">Quantity</td>
+                    <td>$1.99</td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td>
+                    <td id="ad_promote_total_border"><div id="ad_promote_total_cost">$0.00</div></td>
+                </tr>
+            </table>
+            All help is appreciated!
+    </div>
+</nav>
+<main>
 
-                </ul>
-            </div>
-        </nav>
-        <main>
-
-        <div class="row">
+    <div class="row">
 
 
 
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/vegan.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">vegie zone content: tomato ,green paper and onions with mashrom</p>
-                    </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/vegan.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">vegie zone content: tomato ,green paper and onions with mashrom</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-contro2-input" id="customCheck2">
-                        <label class="custom-contro2-label" for="customCheck2">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/r9.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Mix Meat content: peporoni ham beef and sosag.</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-contro2-input" id="customCheck2">
+                    <label class="custom-contro2-label" for="customCheck2">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/r9.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Mix Meat content: peporoni ham beef and sosag.</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control3-input" id="customCheck3">
-                        <label class="custom-control3-label" for="customCheck3">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/r8.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Chicken over content: vegie and chicken bbq with disco tomatoes.</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control3-input" id="customCheck3">
+                    <label class="custom-control3-label" for="customCheck3">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/r8.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Chicken over content: vegie and chicken bbq with disco tomatoes.</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-contro4 custom-checkbox">
-                        <input type="checkbox" class="custom-control4-input" id="customCheck4">
-                        <label class="custom-control4-label" for="customCheck4">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/r7.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text"> Indian butter chicken content: an indian sauce with with red paper.</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-contro4 custom-checkbox">
+                    <input type="checkbox" class="custom-control4-input" id="customCheck4">
+                    <label class="custom-control4-label" for="customCheck4">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/r7.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text"> Indian butter chicken content: an indian sauce with with red paper.</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control5 custom-checkbox">
-                        <input type="checkbox" class="custom-control5-input" id="customCheck5">
-                        <label class="custom-control5-label" for="customCheck5">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/r8.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Superm chicken : vegie with chicken and mashrom.</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control5 custom-checkbox">
+                    <input type="checkbox" class="custom-control5-input" id="customCheck5">
+                    <label class="custom-control5-label" for="customCheck5">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/r8.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Superm chicken : vegie with chicken and mashrom.</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                        <label class="custom-control6-label" for="customCheck6">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/r7.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Bbq chicken : BBq sauce green paper and onions </p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/r7.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Bbq chicken : BBq sauce green paper and onions </p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control7-input" id="customCheck7">
-                        <label class="custom-control7-label" for="customCheck7">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/vegan.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text"> Super supreme : double suprem with an extra cheese .</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control7-input" id="customCheck7">
+                    <label class="custom-control7-label" for="customCheck7">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/vegan.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text"> Super supreme : double suprem with an extra cheese .</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                        <label class="custom-control6-label" for="customCheck6">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/r9.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Beef lovers : many kind of beef with vegie and extra Cheese</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/r9.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Beef lovers : many kind of beef with vegie and extra Cheese</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                        <label class="custom-control6-label" for="customCheck6">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/vegan.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Olives lovers : basicly it is a vegie with extra black olives and alfredo sauce.</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/vegan.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Olives lovers : basicly it is a vegie with extra black olives and alfredo sauce.</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                        <label class="custom-control6-label" for="customCheck6">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/r7.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Chicken alfredo : chicken bbq red onions and green paper with alfredo sauce.</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/r7.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Chicken alfredo : chicken bbq red onions and green paper with alfredo sauce.</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                        <label class="custom-control6-label" for="customCheck6">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/r9.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Arabita : chicken red paper with red onions and olives on the top.</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/r9.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Arabita : chicken red paper with red onions and olives on the top.</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                        <label class="custom-control6-label" for="customCheck6">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/r8.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text"> Margarita chicken : tomatoes feta and chicken piceses .</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/r8.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text"> Margarita chicken : tomatoes feta and chicken piceses .</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                        <label class="custom-control6-label" for="customCheck6">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/r3.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Italian : sosag old world sauce and extra Cheese</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/r3.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Italian : sosag old world sauce and extra Cheese</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                        <label class="custom-control6-label" for="customCheck6">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/vegan.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Plain with chicken : extra cheese and bbq chicken .</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/vegan.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Plain with chicken : extra cheese and bbq chicken .</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                        <label class="custom-control6-label" for="customCheck6">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/r7.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Beef lovers : many kind of beef with vegie and extra Cheese.</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/r7.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Beef lovers : many kind of beef with vegie and extra Cheese.</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                        <label class="custom-control6-label" for="customCheck6">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/r3.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text"> Super supreme : double suprem with an extra cheese</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/r3.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text"> Super supreme : double suprem with an extra cheese</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                        <label class="custom-control6-label" for="customCheck6">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/vegan.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Chicken over content: vegie and chicken bbq with disco tomatoes.</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/vegan.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Chicken over content: vegie and chicken bbq with disco tomatoes.</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                        <label class="custom-control6-label" for="customCheck6">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/r9.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Olives lovers : basicly it is a vegie with extra black olives and alfredo sauce.</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/r9.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Olives lovers : basicly it is a vegie with extra black olives and alfredo sauce.</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                        <label class="custom-control6-label" for="customCheck6">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/r7.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Vegie zone content: tomato ,green paper and onions with mashrom.</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/r7.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Vegie zone content: tomato ,green paper and onions with mashrom.</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                        <label class="custom-control6-label" for="customCheck6">Choose</label>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
 
-                        <img class="card-img-top" src="images/r6.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Bbq chicken : BBq sauce green paper and onions.</p>
-                    </div>
+                <img class="card-img-top" src="images/r6.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Bbq chicken : BBq sauce green paper and onions.</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                        <label class="custom-control6-label" for="customCheck6">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/vegan.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text"> Italian : sosag old world sauce and extra Cheese .</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/vegan.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text"> Italian : sosag old world sauce and extra Cheese .</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card clear-fix">
-                    <div class="custom-control6 custom-checkbox">
-                        <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                        <label class="custom-control6-label" for="customCheck6">Choose</label>
-                    </div>
-                        <img class="card-img-top" src="images/r9.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Beef lovers : many kind of beef with vegie and extra Cheese</p>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/r9.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Beef lovers : many kind of beef with vegie and extra Cheese</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<main>
+    <div class="body-overlay"></div>
+
+
+
+    <div class="menu  text-center">
+        <div class="container">
+            <h2>Some Extra Items</h2>
+            <ul class="list-unstyled row">
+                <li class=" active col-md">Pasta</li>
+                <li class="col-md">Chicken wings</li>
+                <li class="col-md">Salad</li>
+                <li class="col-md"> Fries</li>
+                <li class="col-md">Drinks</li>
+
+
+            </ul>
+        </div>
+
+
+
+    </div>
+
+    <div class="row">
+
+
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/pasta.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">chicken,marinara and alfredo pasta for only 15.99$.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-contro2-input" id="customCheck2">
+                    <label class="custom-contro2-label" for="customCheck2">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/wings.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Bonless chicken wings comes with dip sauce 12 piceses for only 11.99$.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control3-input" id="customCheck3">
+                    <label class="custom-control3-label" for="customCheck3">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/salad.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text"> Csezar salad has a great test with chicken or bacon and sometimes both for only 8.99$.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-contro4 custom-checkbox">
+                    <input type="checkbox" class="custom-control4-input" id="customCheck4">
+                    <label class="custom-control4-label" for="customCheck4">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/fries.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Daily fresh , making on order only with a high quality of oil for only 5.99$.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control5 custom-checkbox">
+                    <input type="checkbox" class="custom-control5-input" id="customCheck5">
+                    <label class="custom-control5-label" for="customCheck5">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/pop.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text"> All soft drinks are available in okotoks pizza on a fairly price,and all the sizes</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card clear-fix">
+                <div class="custom-control6 custom-checkbox">
+                    <input type="checkbox" class="custom-control6-input" id="customCheck6">
+                    <label class="custom-control6-label" for="customCheck6">Choose</label>
+                </div>
+                <img class="card-img-top" src="images/beer.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Enjoy our draft beer for only 7.99$ for a round</p>
                 </div>
             </div>
         </div>
     </main>
-        <main>
-            <div class="body-overlay"></div>
 
+    <!--start footer-->
+    <footer class="copy-right">
+        <div class="container">
+            <div class="row">
+                <section class="col text-left text-uppercase">
+                    Copyright 2019 Okotoks Pizza &copy; All rights reserved
 
+                </section>
+                <section class="col text-right">
+                    <ul>
 
-            <div class="menu  text-center">
-                <div class="container">
-                    <h2>Some Extra Items</h2>
-                    <ul class="list-unstyled row">
-                        <li class=" active col-md">Pasta</li>
-                        <li class="col-md">Chicken wings</li>
-                        <li class="col-md">Salad</li>
-                        <li class="col-md"> Fries</li>
-                        <li class="col-md">Drinks</li>
-
+                        <li> <img src="images/f.png" width=30%  alt="icon"> </li>
+                        <li><img src="images/t.png" width=30% alt=""> </li>
+                        <li><img src="images/in.png" width=30% alt=""> </li>
+                        <li></li>
 
                     </ul>
-                </div>
 
 
 
-            </div>
-
-            <div class="row">
-
-
-
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card clear-fix">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label" for="customCheck1">Choose</label>
-                        </div>
-                            <img class="card-img-top" src="images/pasta.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">chicken,marinara and alfredo pasta for only 15.99$.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card clear-fix">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-contro2-input" id="customCheck2">
-                            <label class="custom-contro2-label" for="customCheck2">Choose</label>
-                        </div>
-                            <img class="card-img-top" src="images/wings.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Bonless chicken wings comes with dip sauce 12 piceses for only 11.99$.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card clear-fix">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control3-input" id="customCheck3">
-                            <label class="custom-control3-label" for="customCheck3">Choose</label>
-                        </div>
-                            <img class="card-img-top" src="images/salad.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"> Csezar salad has a great test with chicken or bacon and sometimes both for only 8.99$.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card clear-fix">
-                        <div class="custom-contro4 custom-checkbox">
-                            <input type="checkbox" class="custom-control4-input" id="customCheck4">
-                            <label class="custom-control4-label" for="customCheck4">Choose</label>
-                        </div>
-                            <img class="card-img-top" src="images/fries.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Daily fresh , making on order only with a high quality of oil for only 5.99$.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card clear-fix">
-                        <div class="custom-control5 custom-checkbox">
-                            <input type="checkbox" class="custom-control5-input" id="customCheck5">
-                            <label class="custom-control5-label" for="customCheck5">Choose</label>
-                        </div>
-                            <img class="card-img-top" src="images/pop.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"> All soft drinks are available in okotoks pizza on a fairly price,and all the sizes</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card clear-fix">
-                        <div class="custom-control6 custom-checkbox">
-                            <input type="checkbox" class="custom-control6-input" id="customCheck6">
-                            <label class="custom-control6-label" for="customCheck6">Choose</label>
-                        </div>
-                            <img class="card-img-top" src="images/beer.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Enjoy our draft beer for only 7.99$ for a round</p>
-                        </div>
-                    </div>
-                </div>
-        </main>
-
-<!--start footer-->
-        <footer class="copy-right">
-            <div class="container">
-                <div class="row">
-                    <section class="col text-left text-uppercase">
-                        Copyright 2019 Okotoks Pizza &copy; All rights reserved
-
-                    </section>
-                    <section class="col text-right">
-                        <ul>
-
-                            <li> <img src="images/f.png" width=30%  alt="icon"> </li>
-                            <li><img src="images/t.png" width=30% alt=""> </li>
-                            <li><img src="images/in.png" width=30% alt=""> </li>
-                            <li></li>
-
-                        </ul>
-
-
-
-                    </section>
-
-                </div>
+                </section>
 
             </div>
 
-        </footer>
+        </div>
+
+    </footer>
 
 
 
 
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 
-
-    </body>
+</body>
 </html>
